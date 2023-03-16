@@ -1,0 +1,31 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    <h1>{{ message }}</h1>
+    <p>Count is: {{ count }}</p>
+    <button @click="increment">增加</button>
+  </div>
+
+<script type="module">
+  // import 的不能正常解析，不知道为何？
+   //import { createApp } from 'vue'
+   const { createApp } = Vue
+    
+    createApp({
+      data() {
+        return {
+          message: 'Hello World!',
+          
+            count: 0
+          
+        }
+      },
+      methods:{
+        increment(){
+          this.count++
+        }
+      }
+    }).mount('#app')
+</script>
+    
+
