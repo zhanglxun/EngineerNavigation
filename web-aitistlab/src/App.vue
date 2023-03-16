@@ -12,10 +12,10 @@
             mode="horizontal"
             :style="{ lineHeight: '64px' }"
           >
-            <a-menu-item key="1"><a href="#/Home">首页</a></a-menu-item>
-            <a-menu-item key="2"><a href="#/Weekdaily">AIGC周刊</a></a-menu-item>
-            <a-menu-item key="3"><a href="#/Service">找服务</a></a-menu-item>
-            <a-menu-item key="4"><a href="#/Tools">工具箱</a></a-menu-item>
+            <a-menu-item key="1"><a href="#/home">首页</a></a-menu-item>
+            <a-menu-item key="2"><a href="#/weekdaily">AIGC周刊</a></a-menu-item>
+            <a-menu-item key="3"><a href="#/service">找服务</a></a-menu-item>
+            <a-menu-item key="4"><a href="#/tools">工具箱</a></a-menu-item>
 
           </a-menu>
            
@@ -48,13 +48,14 @@ import Footer from './components/footer.vue';
 import Home from './components/home.vue';
 import Weekdaily from './components/weekdaily.vue'
 import Service from './components/service.vue'
+import Tools from './components/tools.vue'
 import NotFound from './components/notfound.vue'
 
 const routes={
-  '/Home':Home,
-  '/Weekdaily':Weekdaily,
-  '/Service':Service,
-
+  '/home':Home,
+  '/weekdaily':Weekdaily,
+  '/service':Service,
+  '/tools':Tools,
 }
 
 export default defineComponent({
@@ -82,16 +83,15 @@ export default defineComponent({
     Footer,
     Home,
     Weekdaily,
-    Service
+    Service,
+    Tools
   }
 });
 
 </script>
 
-<style>
+<style scoped>
 .site-layout-content {
-  min-height: 280px;
-  padding: 24px;
   background: #fff;
 }
 .logo {
