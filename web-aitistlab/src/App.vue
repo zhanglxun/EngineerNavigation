@@ -16,7 +16,6 @@
             <a-menu-item key="2"><a href="#/weekdaily">AIGC周刊</a></a-menu-item>
             <a-menu-item key="3"><a href="#/service">找服务</a></a-menu-item>
             <a-menu-item key="4"><a href="#/tools">工具箱</a></a-menu-item>
-
           </a-menu>
            
         </a-layout-header>
