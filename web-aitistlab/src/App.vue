@@ -5,7 +5,9 @@
     <a-row justify="center">
       <a-col :span="18">
         <a-layout-header>
-          <div class="logo" />
+          <div class="logo">
+            <text style="">AitistLab</text>
+          </div>
           <a-menu
             v-model:selectedKeys="selectedKeys"
             theme="dark"
@@ -21,16 +23,17 @@
         </a-layout-header>
 
       <a-layout-content style="padding: 0 2px">
+
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item>Home</a-breadcrumb-item>
           <a-breadcrumb-item>List</a-breadcrumb-item>
           <a-breadcrumb-item>App</a-breadcrumb-item>
         </a-breadcrumb>
+
         <div>
-         
-        <component :is="currentView" />
-         
+          <component :is="currentView" />
         </div>
+        
       </a-layout-content>
 
       <Footer></Footer>
@@ -97,13 +100,18 @@ export default defineComponent({
   float: left;
   width: 120px;
   height: 31px;
-  margin: 16px 24px 16px 0;
-  background: rgba(255, 255, 255, 0.3);
-  background-image: "/assets/logo.svg";
+  /* margin: 16px 24px 16px 0; */
+  /* background: rgba(255, 255, 255, 0.3); */
+  /* background-image: "/assets/logo.svg"; */
+  transform: translate(8.96875, 123);
+  font-family: Comfortaa;
+  font-size: 24px;
+  color: #fff;
 }
+
 .ant-row-rtl .logo {
   float: right;
-  margin: 16px 0 16px 24px;
+  /* margin: 16px 0 16px 24px; */
 }
 
 [data-theme='dark'] .site-layout-content {
