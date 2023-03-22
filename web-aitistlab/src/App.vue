@@ -40,7 +40,9 @@
       
     </a-col>
   </a-row>
+  
   </a-layout>
+
 </template>
 
 
