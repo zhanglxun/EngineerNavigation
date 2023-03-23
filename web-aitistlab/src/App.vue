@@ -25,9 +25,9 @@
       <a-layout-content style="padding: 0 2px">
 
         <a-breadcrumb style="margin: 16px 0">
-          <a-breadcrumb-item>Home</a-breadcrumb-item>
-          <a-breadcrumb-item>List</a-breadcrumb-item>
-          <a-breadcrumb-item>App</a-breadcrumb-item>
+          <a-breadcrumb-item>首页</a-breadcrumb-item>
+          <a-breadcrumb-item>列表</a-breadcrumb-item>
+          <a-breadcrumb-item>应用</a-breadcrumb-item>
         </a-breadcrumb>
 
         <div>

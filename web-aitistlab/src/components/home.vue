@@ -47,4 +47,7 @@ export default defineComponent({
    margin-bottom: 10px;
    border-radius: 5px
 }
+.ant-avatar{
+    border-radius: 0%
+}
 </style>
