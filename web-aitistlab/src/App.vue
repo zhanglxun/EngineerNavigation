@@ -14,7 +14,7 @@
             mode="horizontal"
             :style="{ lineHeight: '64px' }"
           >
-            <a-menu-item key="1"><a href="#/home">首页</a></a-menu-item>
+            <a-menu-item key="1"><a href="#/">首页</a></a-menu-item>
             <a-menu-item key="2"><a href="#/weekdaily">AIGC周刊</a></a-menu-item>
             <a-menu-item key="3"><a href="#/service">找服务</a></a-menu-item>
             <a-menu-item key="4"><a href="#/tools">工具箱</a></a-menu-item>
@@ -49,20 +49,24 @@
 <script lang="ts">
 import { defineComponent,computed, ref } from 'vue';
 import Footer from './components/footer.vue';
+
 import Home from './components/home.vue';
 import Weekdaily from './components/weekdaily.vue'
 import Service from './components/service.vue'
 import Tools from './components/tools.vue'
 import NotFound from './components/notfound.vue'
 
+// 给路由使用history模式
 const routes={
-  '/home':Home,
+  
+  '/':Home,
   '/weekdaily':Weekdaily,
   '/service':Service,
   '/tools':Tools,
 }
 
 export default defineComponent({
+  
   data() {
     return {
       currentPath: window.location.hash
